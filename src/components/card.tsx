@@ -1,12 +1,12 @@
-import React from "react";
+import Transition from "@/app/transition";
 
 const Card = ({ children }: { children: React.ReactNode }) => {
   return (
     <div
       className="p-[100px] m-[10px] border flex
-     justify-center items-center"
+     justify-center items-center shadow-xl rounded-xl"
     >
-      {children}
+      <Transition>{children}</Transition>
     </div>
   );
 };
